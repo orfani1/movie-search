@@ -1,4 +1,5 @@
 # My First JavaScript project.
+----
 
 #### JavaScript/jQuery app that fetches movie data from the OMDb API.
 
@@ -8,7 +9,7 @@
 
 ### Licensing Information: READ LICENCE
 ##### project source can be downloaded from https: 
-
+----
 
 ### Author
 
