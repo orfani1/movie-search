@@ -1,13 +1,13 @@
-  
+/*Movies width*/
 #movies img, #movie img{
     width:100%;
   }
-  
+  /* Media query */
   @media(min-width:960px){
     #movies .col-md-3 .well{
       height: 390px;
     }
-  
+  /* Image Height*/
     #movies .col-md-3 img{
       height:240px;
     }
