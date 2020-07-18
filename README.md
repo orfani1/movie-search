@@ -1,7 +1,7 @@
-* My First JavaScript project
+# My First JavaScript project
 
-__JavaScript/jQuery app that fetches movie data from the OMDb API
+#### JavaScript/jQuery app that fetches movie data from the OMDb API
 
-_________ Usage 
+##Usage 
 
-**** Run index.html on any server.
+* Run index.html on any server.
