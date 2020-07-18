@@ -8,7 +8,7 @@
 * Run index.html on any server.
 
 ### Licensing Information: READ LICENCE
-##### project source can be downloaded from https: 
+##### project source can be downloaded from https://github.com/orfani1/movie-search 
 
 ### Author
 ----
