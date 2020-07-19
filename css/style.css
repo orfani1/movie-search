@@ -1,3 +1,32 @@
+p {
+  color: white;
+  text-shadow: lawngreen;
+  font-size: medium;
+  font-style: italic;
+}
+
+h5{
+  color: whitesmoke;
+  background-color: maroon;
+  border-radius: 7px;
+  padding: 1px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-right: 8px;
+
+}
+.contain {
+  width: 12%;
+  float: right;
+  padding-top: 1.1%;
+  padding-bottom: 0.1%;
+  position: sticky;
+  
+}
+
+
 /*Movies width*/
 #movies img, #movie img{
     width:100%;
@@ -12,3 +41,4 @@
       height:240px;
     }
   }
+

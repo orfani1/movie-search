@@ -15,6 +15,7 @@
           <!--navbar logo -->
           <a class="navbar-brand" href="index.html">MovieInfo</a>
         </div>
+        </div>
       </div>
     </nav>
 
@@ -33,12 +34,32 @@
     <div class="container">
       <div id="movies" class="row"></div>
     </div>
+
+
+    <div class="contain">
+    <h5 class="text-center"><strong>Current Date & Time</strong></h5>
+    <p id="p1" class="text-center"></p>
+    <p id="p2"class="text-center"></p>
+  </div>
+
     <!--jquery script and Js Tags-->
-    <script
+  <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
   crossorigin="anonymous"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+  
+    var today = new Date();
+    
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date+' '+time;
+    
+    document.getElementById("p2").innerHTML = date;
+    document.getElementById("p1").innerHTML = time;
+
+    </script>
   </body>
 </html>
