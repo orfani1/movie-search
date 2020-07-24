@@ -58,18 +58,24 @@
       <div id="msg">
     
         <p></p>
-          <pre></pre>
+        
       </div>
   </form>
     
   <!--End of local storage-->
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </script>
     <script>
       let movies = [];
       // example {id:1592304983049, title: 'Deadpool', year: 2015}
       const addMovie = (ev)=>{
           ev.preventDefault();  //to stop the form submitting
+
+          Swal.fire(
+            'Good Job',
+            'Added Successfully!'
+          )
+
           let movie = {
               id: Date.now(),
               title: document.getElementById('title').value,
@@ -88,10 +94,10 @@
           //saving to localStorage
           localStorage.setItem('MyMovieList', JSON.stringify(movies) );
         }
-      document.addEventListener('DOMContentLoaded', ()=>{
+          document.addEventListener('DOMContentLoaded', ()=>{
           document.getElementById('btn').addEventListener('click', addMovie);
-
       });
+      
   </script>
 
     <!--jquery script and Js Tags-->
