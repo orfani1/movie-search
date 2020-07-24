@@ -18,6 +18,12 @@
         </div>
       </div>
     </nav>
+    
+    <div class="contain">
+      <h5 class="text-center">Date & Time</h5>
+      <p id="p1" class="text-center"></p>
+      <p id="p2"class="text-center"></p>
+    </div>
 
     <!--div Tags-->
     <div class="container">
@@ -35,12 +41,58 @@
       <div id="movies" class="row"></div>
     </div>
 
+    <!--local storage-->
 
-    <div class="contain">
-    <h5 class="text-center"><strong>Current Date & Time</strong></h5>
-    <p id="p1" class="text-center"></p>
-    <p id="p2"class="text-center"></p>
-  </div>
+    <form>
+      <div class="formBox">
+          <label for="title">Movie</label>
+          <input type="text" id="title" placeholder="Title"/>
+      </div>
+      <div class="formBox">
+          <label for="yr">Year</label>
+          <input type="number" id="yr" placeholder="Year"/>
+      </div>
+      <div class="formBox">
+          <button id="btn">Click to Add</button>
+      </div>
+      <div id="msg">
+    
+        <p></p>
+          <pre></pre>
+      </div>
+  </form>
+    
+  <!--End of local storage-->
+
+</script>
+    <script>
+      let movies = [];
+      // example {id:1592304983049, title: 'Deadpool', year: 2015}
+      const addMovie = (ev)=>{
+          ev.preventDefault();  //to stop the form submitting
+          let movie = {
+              id: Date.now(),
+              title: document.getElementById('title').value,
+              year: document.getElementById('yr').value
+         }
+
+          movies.push(movie);
+          document.forms[0].reset(); // to clear the form for the next entries
+          document.querySelector('form').reset();
+
+          //for display purposes only
+          console.warn('added' , {movies} );
+          let pre = document.querySelector('#msg pre');
+          pre.textContent = '\n' + JSON.stringify(movies, '\t', 2);
+
+          //saving to localStorage
+          localStorage.setItem('MyMovieList', JSON.stringify(movies) );
+        }
+      document.addEventListener('DOMContentLoaded', ()=>{
+          document.getElementById('btn').addEventListener('click', addMovie);
+
+      });
+  </script>
 
     <!--jquery script and Js Tags-->
   <script
