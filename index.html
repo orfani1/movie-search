@@ -58,54 +58,32 @@
       <div id="msg pre"></div>
       </div>
    </form>
-    
-  <!--End of local storage-->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-</script>
-    <script>
-      let movies = [];
-      // example {id:1592304983049, title: 'Deadpool', year: 2015}
-      const addMovie = (ev)=>{
-          ev.preventDefault();  //to stop the form submitting
-          //Alert box
-          Swal.fire (
-            'Good Job',
-            'Added Successfully!'
-          )
-
-          let movie = {
-              id: Date.now(),
-              title: document.getElementById('title').value,
-              year: document.getElementById('yr').value
-         }
-
-          movies.push(movie);
-          //document.forms[0].reset(); // to clear the form for the next entries
-          document.querySelector('form').reset();
-
-          //for display purposes only
-          console.warn('added' , {movies});
-          let pre = document.querySelector('msg pre');
-          //pre.textContent = '\n' + JSON.stringify(movies, '\t', 2);
-
-          //saving to localStorage
-          localStorage.setItem('MyMovieList', JSON.stringify(movies) );
-        }
-          document.addEventListener('DOMContentLoaded', ()=>{
-          document.getElementById('btn').addEventListener('click', addMovie);
-      });
-
-  </script>
-
-  <!--jquery script and Js Tags-->
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="js/main.js"></script>
-  <script>
+   
   
+      <div class="kabul">
+        <h4>Age Calculator</h4>
+    Enter Age:
+    <input type="text" id="age" placeholder="Enter Age" />
+    <input type="Submit" onclick="change()" /> <br />
+    Months:
+    <input type="text" id="months" placeholder="Age in Months" /><br/>
+    Days:
+    <input type="text" id="days" placeholder="Age in Days" /><br/>
+    Hours:
+    <input type="text" id="hours" placeholder="Age in Hours" /><br/>
+    Minutes:
+    <input type="text" id="minutes" placeholder="Age in Minutes" /><br/>
+    Seconds:
+    <input type="text" id="seconds" placeholder="Age in Seconds" /><br/>
+    </div>
+
+      <!--End of local storage-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</script>
+    
+  
+  <script>
+
     var today = new Date();
     
     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
@@ -116,5 +94,20 @@
     document.getElementById("p1").innerHTML = time;
 
     </script>
+
+  <!--jquery script and Js Tags-->
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/movie.js"></script>
+  <script src="js/calculate.js"></script>
+</script>
+
+<footer>
+  <p>&copy;2020 Movie-search.com</p>
+</footer>
   </body>
 </html>

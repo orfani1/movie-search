@@ -1,7 +1,10 @@
 # My First JavaScript project.
 ----
-
+## Project Requirements.
 #### JavaScript/jQuery app that fetches movie data from the OMDb API.
+#### age calculator using. This calculator converts your age in months,    days, hours, minutes, and seconds.
+#### Current Date and Time.
+#### Local storage Data, storage data in local storage.
 
 ### Usage 
 
