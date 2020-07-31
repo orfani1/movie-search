@@ -1,6 +1,7 @@
 # My First JavaScript project.
 ----
 ## Project Requirements.
+##### My project approved by Leigh Luerman.
 #### JavaScript/jQuery app that fetches movie data from the OMDb API. main.js line 11 and 45.
 
 #### age calculator using. This calculator converts your age in months,    days, hours, minutes, and seconds. calculate.js
