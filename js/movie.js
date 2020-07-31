@@ -5,7 +5,7 @@
           ev.preventDefault();  //to stop the form submitting
           //Alert box
           Swal.fire (
-            'Good Job',
+            'Good Job...',
             'Added Successfully!'
           )
 
@@ -28,6 +28,6 @@
           localStorage.setItem('MyMovieList', JSON.stringify(movies) );
         }
           document.addEventListener('DOMContentLoaded', ()=>{
-          document.getElementById('btn').addEventListener('click', addMovie);
+          document.getElementById('btton1').addEventListener('click', addMovie);
       });
 

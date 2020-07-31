@@ -1,49 +1,52 @@
-p {
-  color: white;
-  font-size: small;
-  font-style: italic;
+/*Date and Time */
+h7{
+  background-color: sienna;
+  font-size: smaller;
+  border-radius: 4px;
+  padding-right: 2px;
+  padding-left: 2px;
+  margin: 10px;
+  display: -webkit-inline-box;
 }
-
-h5{
-  color: whitesmoke;
-  background-color: maroon;
-  border-radius: 7px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left:px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: 1px;
-  margin-left: 10px;
-
-}
+  
+/* date and Time container */
 .contain {
-  width: 8%;
+  width: 6%;
   float: right;
   margin-right: 2%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  position: sticky;
+  padding-left: 0%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  position: initial;
 
 }
 
-.formBox{
-  padding: 0.5rem 2rem;
+/*Button*/
+#btton1 {
+  width: 12.2%;
+  display: -moz-inline-stack;
+  background-color: brown;
+  font-weight: normal;
+  height: 2%;
+  font-size: 11px;
+  margin-left: 3%;
+  padding: 2px;
+  margin-top: 0px;
+  border-radius: 5px;
+  
+}
+
+.formBox {
+  padding: 0.3rem 1rem;
   color: white;
   padding-left: 1%;
   margin-right: 1%;
   position: sticky;
-  
+  display: -ms-inline-flexbox;
   
 }
 
-#btn {
-  background-color: brown;
-  margin-left: 3%;
-  border-radius: 7px;
-}
-
-#btn:hover{
+#btton1:hover{
   background-color: gray;
 }
 
@@ -59,8 +62,9 @@ h5{
   float: right;
 }
 
+/* input child 3*/
 input:nth-child(3){
-  background-color: olive;
+  background-color: rgb(128, 177, 44);
   color: aliceblue;
 }
 
@@ -68,13 +72,15 @@ div:hover input:nth-child(3){
   background-color: darkgoldenrod;
 }
 
+/* input child 5*/
 input:nth-child(5){
   margin-left: 17px;
   margin-top: 5px;
 }
 
+/* input child 7*/
 input:nth-child(7){
-  margin-left: 38px;
+  margin-left: 36px;
   margin-top: 5px;
   color: black;
 }
@@ -106,30 +112,139 @@ h4{
   
 }
 
+/*tip*/
+#totalTip {
+  font-size: 30px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+body {
+  font-family: Roboto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #d4d462, #2f4128);
+  /* Chrome 10-25, Safari 5.1-6 */
+  *background: linear-gradient(to left, #2e241fce, #082435);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*Tip Calculate container*/
+#content {
+  height: 525px;
+  width: 360px;
+  margin: 100px auto;
+  background: sienna;
+  box-shadow: 0 0 3px rgba(247, 123, 123, 0.1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+/* h1 tag*/
+h1 {
+  background: #2a9e81e5;
+  padding-right: 12px;
+  color: rgb(255, 251, 251);
+  padding: 10px 100px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+p {
+  padding-left: 20px;
+  color: black;
+}
+
+#billamt {
+  font-size: 14px;
+  color: balck;
+  background-color: #ffffff;
+  width: 69%;
+  padding: 5px 5px 8px 8px;
+  margin-left: 10px;
+}
+
+#billamt:focus {
+  background: white;
+  border: 3px solid #71a898;
+  outline: none;
+}
+
+#peopleamt {
+  width: 69%;
+  padding: 5px 5px 7px 7px;
+  margin-left: 20px;
+  color: #111010f3;
+  background-color: hsl(0, 5%, 96%);
+  font-size: 14px;
+}
+
+.dollarSign {
+  display: flex;
+}
+
+/*service rate*/
+#serviceQual {
+  padding: 12px 13px 20px 20px;
+  margin-left: 1px;
+  font-size: 24px;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+  background: maroon;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  color: white;
+}
+
+button:hover {
+  background: #be9670;
+  border-bottom-color: rgb(82, 4, 4);
+}
+
+#totalTip:before {
+  content: "Tip amount";
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+
+#totalTip sup {
+  font-size: 20px;
+  top: -18px;
+}
+
+#totalTip small {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+
 /*Movies width*/
 #movies img, #movie img{
-    width:100%;
+  width:100%;
+}
+/* Media query */
+@media(min-width:960px){
+  #movies .col-md-3 .well{
+    height: 390px;
   }
-  /* Media query */
-  @media(min-width:960px){
-    #movies .col-md-3 .well{
-      height: 390px;
-    }
-  /* Image Height*/
-    #movies .col-md-3 img{
-      height:240px;
-    }
-  
-    footer{
-      position: fixed;
-      width: 100%;
-      text-align: center;
-      padding-top: 3px;
-      margin-top: px;
-      background-color: darkcyan;
-      left: 0;
-      bottom: 0;
-    }
-  
-  }
+/* Image Height*/
+  #movies .col-md-3 img{
+    height:240px;
+   }
 
+  }

@@ -1,3 +1,4 @@
+// function get Year, Month.... values
 function change(){
     var age = document.getElementById('age').value;
     document.getElementById('months').value = (age * 12)+ "Months";
